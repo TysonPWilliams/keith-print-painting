@@ -59,6 +59,9 @@ function App() {
             </div>
           </div>
           <nav className={`nav ${isMobileMenuOpen ? 'mobile-open' : ''}`}>
+            <div className="mobile-menu-logo">
+              <img src={logo} alt="Keith Print Painting & Decorating" className="mobile-logo-image" />
+            </div>
             <a href="#home" className="nav-link" onClick={closeMobileMenu}>Home</a>
             <a href="#services" className="nav-link" onClick={closeMobileMenu}>Services</a>
             <a href="#about" className="nav-link" onClick={closeMobileMenu}>About</a>
@@ -264,8 +267,8 @@ function App() {
       <section id="service-area" className="service-area">
         <div className="container">
           <div className="section-header">
-            <h2>Proudly Serving the Shoalhaven & Surrounding Areas</h2>
-            <p>Local painters you can trust, covering the beautiful Shoalhaven Region</p>
+            <h2>Proudly Serving the Shoalhaven, South Coast & Surrounding Areas</h2>
+            <p>Local painters you can trust, covering from Kiama to Ulladulla and everywhere in between</p>
           </div>
           <div className="service-area-content">
             <div className="service-area-map">
@@ -285,6 +288,26 @@ function App() {
             <div className="service-locations">
               <h3>We Service These Local Areas:</h3>
               <div className="locations-grid">
+                <div className="location-item">
+                  <MapPin className="location-icon" />
+                  <span>Kiama</span>
+                </div>
+                <div className="location-item">
+                  <MapPin className="location-icon" />
+                  <span>Berry</span>
+                </div>
+                <div className="location-item">
+                  <MapPin className="location-icon" />
+                  <span>Kangaroo Valley</span>
+                </div>
+                <div className="location-item">
+                  <MapPin className="location-icon" />
+                  <span>Nowra</span>
+                </div>
+                <div className="location-item">
+                  <MapPin className="location-icon" />
+                  <span>Bomaderry</span>
+                </div>
                 <div className="location-item">
                   <MapPin className="location-icon" />
                   <span>Vincentia</span>
@@ -307,31 +330,11 @@ function App() {
                 </div>
                 <div className="location-item">
                   <MapPin className="location-icon" />
-                  <span>Basin View</span>
-                </div>
-                <div className="location-item">
-                  <MapPin className="location-icon" />
-                  <span>Erowal Bay</span>
-                </div>
-                <div className="location-item">
-                  <MapPin className="location-icon" />
                   <span>Shoalhaven Heads</span>
                 </div>
                 <div className="location-item">
                   <MapPin className="location-icon" />
-                  <span>Callala Beach</span>
-                </div>
-                <div className="location-item">
-                  <MapPin className="location-icon" />
-                  <span>Callala Bay</span>
-                </div>
-                <div className="location-item">
-                  <MapPin className="location-icon" />
-                  <span>Culburra Beach</span>
-                </div>
-                <div className="location-item">
-                  <MapPin className="location-icon" />
-                  <span>Greenwell Point</span>
+                  <span>Ulladulla</span>
                 </div>
               </div>
               <p className="service-note">
@@ -359,7 +362,7 @@ function App() {
                 <div>
                   <h4>Call Now For Fast Service</h4>
                   <p>Speak to a real person, get answers today</p>
-                  <a href="tel:+1234567890" className="contact-link">+1 (234) 567-890</a>
+                  <a href="tel:0400734265" className="contact-link">0400 734 265</a>
                 </div>
               </div>
               <div className="contact-item">
@@ -378,7 +381,7 @@ function App() {
                 </div>
                 <div>
                   <h4>We Come To You</h4>
-                  <p>Serving Vincentia & Jervis Bay region</p>
+                  <p>Serving the Shoalhaven, South Coast & surrounding areas</p>
                   <span className="contact-link">See our full service area above</span>
                 </div>
               </div>
@@ -434,9 +437,9 @@ function App() {
             <div className="footer-section">
               <h4>Contact</h4>
               <ul>
-                <li>Phone: +1 (234) 567-890</li>
+                <li>Phone: 0400 734 265</li>
                 <li>Email: kwprint@aol.com</li>
-                <li>Service Area: Jervis Bay & Surrounding Areas</li>
+                <li>Service Area: Shoalhaven, South Coast & Surrounding Areas</li>
               </ul>
             </div>
           </div>
