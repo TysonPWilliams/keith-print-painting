@@ -17,8 +17,7 @@ import {
   X
 } from 'lucide-react'
 
-// Import images
-import logo from './assets/kp-logo.png'
+// Images served from public/images with base-aware paths
 
 function App() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
@@ -53,14 +52,14 @@ function App() {
       <header className={`header ${scrolled ? 'scrolled' : ''}`}>
         <div className="container">
           <div className="logo">
-            <img src={logo} alt="Keith Print Painting & Decorating" className="logo-image" />
+            <img src={`${import.meta.env.BASE_URL}images/logo.png`} alt="Keith Print Painting & Decorating" className="logo-image" />
             <div className="logo-text" aria-label="KP Painting & Decorating and Wallpapering">
               KP Painting & Decorating
             </div>
           </div>
           <nav className={`nav ${isMobileMenuOpen ? 'mobile-open' : ''}`}>
             <div className="mobile-menu-logo">
-              <img src={logo} alt="Keith Print Painting & Decorating" className="mobile-logo-image" />
+              <img src={`${import.meta.env.BASE_URL}images/logo.png`} alt="Keith Print Painting & Decorating" className="mobile-logo-image" />
             </div>
             <a href="#home" className="nav-link" onClick={closeMobileMenu}>Home</a>
             <a href="#services" className="nav-link" onClick={closeMobileMenu}>Services</a>
