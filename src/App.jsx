@@ -19,9 +19,6 @@ import {
 
 // Import images
 import logo from './assets/kp-logo.png'
-import img01 from './assets/img01.jpeg'
-import img02 from './assets/img02.jpeg'
-import img03 from './assets/img03.jpeg'
 
 function App() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
@@ -57,6 +54,9 @@ function App() {
         <div className="container">
           <div className="logo">
             <img src={logo} alt="Keith Print Painting & Decorating" className="logo-image" />
+            <div className="logo-text" aria-label="KP Painting & Decorating and Wallpapering">
+              KP Painting & Decorating
+            </div>
           </div>
           <nav className={`nav ${isMobileMenuOpen ? 'mobile-open' : ''}`}>
             <a href="#home" className="nav-link" onClick={closeMobileMenu}>Home</a>
@@ -88,6 +88,10 @@ function App() {
               Trusted by homeowners and businesses for over 30 years. We don't just paint walls – we create spaces 
               you'll love coming home to. Every project comes with our satisfaction guarantee.
             </p>
+            <div className="hero-team" aria-label="Keith and Sam">
+              <img src={`${import.meta.env.BASE_URL}images/keith.jpeg`} alt="Keith and Sam" className="hero-team-photo" />
+              <div className="hero-team-text">Keith & Sam – friendly, local and professional</div>
+            </div>
             <div className="hero-stats">
               <div className="stat-item">
                 <strong>500+</strong>
@@ -109,7 +113,7 @@ function App() {
           </div>
           <div className="hero-image">
             <div className="hero-image-container">
-              <img src={img01} alt="Professional Painting Services" className="hero-main-image" />
+              <img src={`${import.meta.env.BASE_URL}images/hero.jpeg`} alt="Professional Painting Services" className="hero-main-image" />
               <div className="hero-overlay">
                 <div className="hero-icons">
                   <Paintbrush className="hero-icon paintbrush" />
@@ -136,12 +140,12 @@ function App() {
                 <Home className="icon-home" />
               </div>
               <h3>Your Home, Beautifully Painted</h3>
-              <p>Turn your house into the home of your dreams. We'll help you choose colors that reflect your personality and create spaces your family will love for years to come.</p>
+              <p>Turn your house into the home of your dreams. We'll help you choose colours that reflect your personality and create spaces your family will love for years to come.</p>
               <ul className="service-features">
                 <li>• FREE colour consultation with every project</li>
                 <li>• Premium paints that last longer</li>
                 <li>• Meticulous prep work (the secret to lasting results)</li>
-                <li>• Zero mess guarantee – we clean everything</li>
+                <li>• We clean up after ourselves</li>
               </ul>
             </div>
             <div className="service-card">
@@ -153,7 +157,6 @@ function App() {
               <ul className="service-features">
                 <li>• Durable finishes that reduce future costs</li>
                 <li>• Fully licensed & insured (your peace of mind)</li>
-                <li>• Annual touch-up programs available</li>
               </ul>
             </div>
             <div className="service-card">
@@ -163,7 +166,7 @@ function App() {
               <h3>Make Every Room Special</h3>
               <p>Whether you want cozy and warm or modern and bold, we'll create interiors that make you smile every time you walk in the room.</p>
               <ul className="service-features">
-                <li>• Colors that make you feel at home</li>
+                <li>• Colours that make you feel at home</li>
                 <li>• Stunning accent walls that wow guests</li>
                 <li>• Custom finishes you won't find anywhere else</li>
               </ul>
@@ -178,20 +181,6 @@ function App() {
                 <li>• Fix every crack and hole (no shortcuts)</li>
                 <li>• Smooth surfaces for flawless finish</li>
                 <li>• Premium primers for maximum durability</li>
-                <li>• Mold treatment to protect your family</li>
-              </ul>
-            </div>
-            <div className="service-card">
-              <div className="service-icon">
-                <Sparkles className="icon-sparkles" />
-              </div>
-              <h3>Create Something Extraordinary</h3>
-              <p>Why settle for ordinary walls? Let us create custom finishes that make your space unique and add real value to your property.</p>
-              <ul className="service-features">
-                <li>• Artistic faux finishes that impress</li>
-                <li>• Luxurious metallic effects</li>
-                <li>• Textured walls with personality</li>
-                <li>• One-of-a-kind custom designs</li>
               </ul>
             </div>
             <div className="service-card">
@@ -202,9 +191,22 @@ function App() {
               <p>Smart property owners know that the right protective coating today prevents expensive repairs tomorrow. We'll help you choose what's right for your needs.</p>
               <ul className="service-features">
                 <li>• Garage floors that resist stains & damage</li>
-                <li>• Waterproof systems that prevent costly repairs</li>
                 <li>• Easy-clean surfaces for high-traffic areas</li>
                 <li>• Industrial-strength solutions that last</li>
+              </ul>
+            </div>
+            <div className="service-card wallpapering-special">
+              <div className="service-icon">
+                <Sparkles className="icon-sparkles" />
+              </div>
+              <h3>Wallpapering & Custom Finishes</h3>
+              <p>Not many painters offer professional wallpapering – but we do! Transform your space with beautiful wallpapers, feature walls, and custom finishes that make your home truly unique.</p>
+              <ul className="service-features">
+                <li>• Professional wallpaper installation (rare skill!)</li>
+                <li>• Feature walls that become conversation starters</li>
+                <li>• Artistic faux finishes that impress</li>
+                <li>• Luxurious metallic effects</li>
+                <li>• Custom designs and accent walls</li>
               </ul>
             </div>
           </div>
@@ -240,15 +242,11 @@ function App() {
                   <CheckCircle className="feature-icon" />
                   <span>100% Satisfaction Guarantee</span>
                 </div>
-                <div className="feature">
-                  <CheckCircle className="feature-icon" />
-                  <span>Finished When Promised (Or It's FREE)</span>
-                </div>
               </div>
             </div>
             <div className="about-image">
               <div className="about-image-container">
-                <img src={img02} alt="Professional Painting Team" className="about-main-image" />
+                <img src={`${import.meta.env.BASE_URL}images/about.jpeg`} alt="Professional Painting Team" className="about-main-image" />
                 <div className="about-overlay">
                   <div className="about-icons">
                     <Paintbrush className="about-icon paintbrush" />
@@ -273,7 +271,7 @@ function App() {
             <div className="service-area-map">
               <div className="map-container">
                 <iframe 
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50234.89308717625!2d150.6683!3d-35.0833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b15b3b9b1b9b9b9%3A0x1234567890abcdef!2sVincentia%20NSW%202540%2C%20Australia!5e0!3m2!1sen!2sau!4v1234567890123!5m2!1sen!2sau"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d835300.9082927176!2d149.16531464753578!3d-35.1343143600925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b145d58ad975251%3A0x9743ce33a278efd!2sShoalhaven%20City%20Council%2C%20NSW!5e0!3m2!1sen!2sau!4v1757586800373!5m2!1sen!2sau"
                   width="100%" 
                   height="400" 
                   style={{border: 0}}
@@ -403,7 +401,7 @@ function App() {
                     <option value="exterior">Exterior Painting</option>
                     <option value="commercial">Commercial Project</option>
                     <option value="specialty">Specialty Finish</option>
-                    <option value="consultation">Color Consultation</option>
+                    <option value="consultation">Colour Consultation</option>
                   </select>
                 </div>
                 <div className="form-group">
