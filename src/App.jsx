@@ -17,6 +17,12 @@ import {
   X
 } from 'lucide-react'
 
+// Import images
+import logo from './assets/kp-logo.png'
+import img01 from './assets/img01.jpeg'
+import img02 from './assets/img02.jpeg'
+import img03 from './assets/img03.jpeg'
+
 function App() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
@@ -50,7 +56,7 @@ function App() {
       <header className={`header ${scrolled ? 'scrolled' : ''}`}>
         <div className="container">
           <div className="logo">
-            <img src="/kp-logo.png" alt="Keith Print Painting & Decorating" className="logo-image" />
+            <img src={logo} alt="Keith Print Painting & Decorating" className="logo-image" />
           </div>
           <nav className={`nav ${isMobileMenuOpen ? 'mobile-open' : ''}`}>
             <a href="#home" className="nav-link" onClick={closeMobileMenu}>Home</a>
@@ -103,7 +109,7 @@ function App() {
           </div>
           <div className="hero-image">
             <div className="hero-image-container">
-              <img src="/img01.jpeg" alt="Professional Painting Services" className="hero-main-image" />
+              <img src={img01} alt="Professional Painting Services" className="hero-main-image" />
               <div className="hero-overlay">
                 <div className="hero-icons">
                   <Paintbrush className="hero-icon paintbrush" />
@@ -242,7 +248,7 @@ function App() {
             </div>
             <div className="about-image">
               <div className="about-image-container">
-                <img src="/img02.jpeg" alt="Professional Painting Team" className="about-main-image" />
+                <img src={img02} alt="Professional Painting Team" className="about-main-image" />
                 <div className="about-overlay">
                   <div className="about-icons">
                     <Paintbrush className="about-icon paintbrush" />
@@ -260,8 +266,8 @@ function App() {
       <section id="service-area" className="service-area">
         <div className="container">
           <div className="section-header">
-            <h2>Proudly Serving Vincentia & Surrounding Areas</h2>
-            <p>Local painters you can trust, covering the beautiful Jervis Bay region</p>
+            <h2>Proudly Serving the Shoalhaven & Surrounding Areas</h2>
+            <p>Local painters you can trust, covering the beautiful Shoalhaven Region</p>
           </div>
           <div className="service-area-content">
             <div className="service-area-map">
@@ -432,12 +438,12 @@ function App() {
               <ul>
                 <li>Phone: +1 (234) 567-890</li>
                 <li>Email: kwprint@aol.com</li>
-                <li>Service Area: Local & Surrounding</li>
+                <li>Service Area: Jervis Bay & Surrounding Areas</li>
               </ul>
             </div>
           </div>
           <div className="footer-bottom">
-            <p>&copy; 2024 Keith Print Painting & Decorating. All rights reserved.</p>
+            <p>&copy; 2025 Keith Print Painting & Decorating. All rights reserved.</p>
           </div>
         </div>
       </footer>
