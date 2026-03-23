@@ -5,7 +5,7 @@ import garageAfter from '../assets/garage-after.jpg';
 import gutter from '../assets/gutter-after.jpg';
 
 const HeroSlideshow = () => {
-  const images = [garageBefore, garageAfter, hero];
+  const images = [garageAfter, hero];
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
