@@ -16,6 +16,9 @@ import {
   Droplets,
   X
 } from 'lucide-react'
+import HeroSlideshow from './components/hero-slideshow.jsx'
+import AboutSlideshow from './components/about-slideshow.jsx'
+
 
 // Images served from public/images with base-aware paths
 
@@ -85,18 +88,18 @@ function App() {
       <section id="home" className="hero">
         <div className="container">
           <div className="hero-content">
-            <h2 className="hero-title">Transform Your Space Into Something Beautiful</h2>
+            <h2 className="hero-title">Trusted Local Painter in the Shoalhaven</h2>
             <p className="hero-subtitle">
               Trusted by homeowners and businesses for over 30 years. We don't just paint walls – we create spaces 
               you'll love coming home to. Every project comes with our satisfaction guarantee.
             </p>
             <div className="hero-team" aria-label="Keith and Sam">
-              <img src={`${import.meta.env.BASE_URL}images/keith.jpeg`} alt="Keith and Sam" className="hero-team-photo" />
-              <div className="hero-team-text">Keith & Sam – friendly, local and professional</div>
+              {/* <img src={`${import.meta.env.BASE_URL}images/keith.jpeg`} alt="Keith and Sam" className="hero-team-photo" /> */}
+              {/* <div className="hero-team-text">Keith & Sam – friendly, local and professional</div> */}
             </div>
             <div className="hero-stats">
               <div className="stat-item">
-                <strong>500+</strong>
+                <strong>100+</strong>
                 <span>Satisfied Customers</span>
               </div>
               <div className="stat-item">
@@ -114,17 +117,10 @@ function App() {
             </div>
           </div>
           <div className="hero-image">
-            <div className="hero-image-container">
+            <HeroSlideshow />
+            {/* <div className="hero-image-container">
               <img src={`${import.meta.env.BASE_URL}images/hero.jpeg`} alt="Professional Painting Services" className="hero-main-image" />
-              <div className="hero-overlay">
-                <div className="hero-icons">
-                  <Paintbrush className="hero-icon paintbrush" />
-                  <PaintRoller className="hero-icon roller" />
-                  <Droplets className="hero-icon droplets" />
-                </div>
-                <span>Professional Painting Services</span>
-              </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
@@ -248,14 +244,15 @@ function App() {
             </div>
             <div className="about-image">
               <div className="about-image-container">
-                <img src={`${import.meta.env.BASE_URL}images/about.jpeg`} alt="Professional Painting Team" className="about-main-image" />
-                <div className="about-overlay">
+                <AboutSlideshow />
+                {/* <img src={`${import.meta.env.BASE_URL}images/about.jpeg`} alt="Professional Painting Team" className="about-main-image" /> */}
+                {/* <div className="about-overlay">
                   <div className="about-icons">
                     <Paintbrush className="about-icon paintbrush" />
                     <PaintRoller className="about-icon roller" />
                   </div>
                   <span>Professional Team</span>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -443,7 +440,7 @@ function App() {
             </div>
           </div>
           <div className="footer-bottom">
-            <p>&copy; 2025 Keith Print Painting & Decorating. All rights reserved.</p>
+            <p>&copy; 2026 Keith Print Painting & Decorating. All rights reserved.</p>
           </div>
         </div>
       </footer>
