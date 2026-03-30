@@ -1,11 +1,10 @@
 import { useState, useEffect } from 'react';
-import hero from '../assets/hero.jpeg';
-import garageBefore from '../assets/garage-before.jpg';
-import garageAfter from '../assets/garage-after.jpg';
-import gutter from '../assets/gutter-after.jpg';
+import hero from '../assets/hero.jpg';
+import wallpaper from '../assets/wallpaper.jpg';
+
 
 const HeroSlideshow = () => {
-  const images = [garageAfter, hero];
+  const images = [wallpaper, hero];
   const [index, setIndex] = useState(0);
 
   useEffect(() => {

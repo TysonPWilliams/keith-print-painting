@@ -99,7 +99,7 @@ function App() {
             </div>
             <div className="hero-stats">
               <div className="stat-item">
-                <strong>100+</strong>
+                <strong>500+</strong>
                 <span>Satisfied Customers</span>
               </div>
               <div className="stat-item">
@@ -203,7 +203,6 @@ function App() {
                 <li>• Professional wallpaper installation (rare skill!)</li>
                 <li>• Feature walls that become conversation starters</li>
                 <li>• Artistic faux finishes that impress</li>
-                <li>• Luxurious metallic effects</li>
                 <li>• Custom designs and accent walls</li>
               </ul>
             </div>
